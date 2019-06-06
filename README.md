@@ -25,6 +25,8 @@ This project can be used as a module as well as a command line program
 ### Using in your project
 ---
 from num2text import *
+---
+---
 num2text(num)
 ---
 
