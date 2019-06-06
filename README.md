@@ -1,4 +1,4 @@
-# num2text
+# Num2text
 A simple python module to convert numbers to textual words eg. 2 -> two
 
 ## Getting Started
@@ -18,17 +18,17 @@ cd num2text
 sudo ./setup.py
 ```
 
-##Usage
+## Usage
 
 This project can be used as a module as well as a command line program
 
-###Using in your project
+### Using in your project
 ---
 from num2text import *
 num2text(num)
 ---
 
-###From Command Line
+### From Command Line
 ```
 usage: num2text.py [-h] [-d DELIMITER] Number
 ```
