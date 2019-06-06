@@ -12,28 +12,26 @@ Python3+
 ### Installing
 Just Copy and paste the following in your terminal
 
-```
+'''
 git clone 
 cd num2text
 sudo ./setup.py
-```
+'''
 
 ## Usage
 
 This project can be used as a module as well as a command line program
 
 ### Using in your project
----
+'''
 from num2text import *
----
----
 num2text(num)
----
+'''
 
 ### From Command Line
-```
+'''
 usage: num2text.py [-h] [-d DELIMITER] Number
-```
+'''
 
 ## Authors
 
