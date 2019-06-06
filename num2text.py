@@ -238,11 +238,13 @@ def num2text(dat, delimiter=", "):
         dat = dat - \
             (dat % 1000000000000000000000000000000000000000000000000000000000000000)
     # returns the name to either the function itself or the user
-    return (vigintillion + novemdecillion + octodecillion + septemdecillion +
-            sexdecillion + quindecillion + quattuordecillion + tredecillion +
-            duodecillion + undecillion + decillion + nonillion + octillion +
-            septillion + sextillion + quintillion + quadrillion + trillions +
-            billions + millions + thousands + hundreds + tens + units + nums)
+    num_name = (vigintillion + novemdecillion + octodecillion +
+                septemdecillion + sexdecillion + quindecillion +
+                quattuordecillion + tredecillion + duodecillion + undecillion +
+                decillion + nonillion + octillion + septillion + sextillion +
+                quintillion + quadrillion + trillions + billions + millions +
+                thousands + hundreds + tens + units + nums)
+    return num_name.strip(", ")
 
 
 # this function is used to give special names to number between 10 and 20
