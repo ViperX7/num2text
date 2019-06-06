@@ -1,8 +1,19 @@
-# This code uses a function to convert numbers into text
-# feel free to report any bugs or request some additions
-# you are allowed to modify the code and use in your projects
-# untill this header is not removed
-# this program has limitations as it can only translate to an extent
+# Copyright 2019 Utkarsh Yadav
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
+# This program has limitations as it can only translate to an extent
 # it can translate upto (10^64 -1)
 
 
