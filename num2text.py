@@ -1,6 +1,4 @@
-# This Code Was Created By Utkarsh Yadav on
-#         29th March 2017 at 22:49 IST
-# this code uses a function to convert numbers into text
+# This code uses a function to convert numbers into text
 # feel free to report any bugs or request some additions
 # you are allowed to modify the code and use in your projects
 # untill this header is not removed
@@ -8,10 +6,9 @@
 # it can translate upto (10^64 -1)
 
 
-def num2text(dat):
+def num2text(dat, delimiter=", "):
 
     # input inspection
-    # added support for -ve numbers &added limit 31 jan 2018 23:13
 
     if (dat > pow(10, 64) - 1):
         print("Input Out of range")
@@ -65,56 +62,63 @@ def num2text(dat):
 
     if (dat > 999):
         if (((dat % 1000000) / 1000) != 0):
-            thousands = num2text((dat % 1000000) / 1000) + " Thousand, "
+            thousands = num2text((dat % 1000000) / 1000) + \
+                " Thousand" + delimiter
         dat = dat - (dat % 1000000)
 
     if (dat > 999999):
         if (((dat % 1000000000) / 1000000) != 0):
-            millions = num2text((dat % 1000000000) / 1000000) + " Million, "
+            millions = num2text(
+                (dat % 1000000000) / 1000000) + " Million" + delimiter
         dat = dat - (dat % 1000000000)
 
     if (dat > 999999999):
         if (((dat % 1000000000000) / 1000000000) != 0):
             billions = num2text(
-                (dat % 1000000000000) / 1000000000) + " Billion, "
+                (dat % 1000000000000) / 1000000000) + " Billion" + delimiter
         dat = dat - (dat % 1000000000000)
 
     if (dat > 999999999999):
         if (((dat % 1000000000000000) / 1000000000000) != 0):
-            trillions = num2text(
-                (dat % 1000000000000000) / 1000000000000) + " Trillion, "
+            trillions = num2text((dat % 1000000000000000) /
+                                 1000000000000) + " Trillion" + delimiter
         dat = dat - (dat % 1000000000000000)
 
     if (dat > 999999999999999):
         if (((dat % 1000000000000000000) / 1000000000000000) != 0):
-            quadrillion = num2text((dat % 1000000000000000000) /
-                                   1000000000000000) + " Quadrillion, "
+            quadrillion = num2text(
+                (dat % 1000000000000000000) /
+                1000000000000000) + " Quadrillion" + delimiter
         dat = dat - (dat % 1000000000000000000)
 
     if (dat > 999999999999999999):
         if (((dat % 1000000000000000000000) / 1000000000000000000) != 0):
-            quintillion = num2text((dat % 1000000000000000000000) /
-                                   1000000000000000000) + " Quintillion, "
+            quintillion = num2text(
+                (dat % 1000000000000000000000) /
+                1000000000000000000) + " Quintillion" + delimiter
         dat = dat - (dat % 1000000000000000000000)
 
     if (dat > 999999999999999999999):
         if (((dat % 1000000000000000000000000) / 1000000000000000000000) != 0):
-            sextillion = num2text((dat % 1000000000000000000000000) /
-                                  1000000000000000000000) + " Sextillion, "
+            sextillion = num2text(
+                (dat % 1000000000000000000000000) /
+                1000000000000000000000) + " Sextillion" + delimiter
         dat = dat - (dat % 1000000000000000000000000)
 
     if (dat > 999999999999999999999999):
         if (((dat % 1000000000000000000000000000) / 1000000000000000000000000)
                 != 0):
-            septillion = num2text((dat % 1000000000000000000000000000) /
-                                  1000000000000000000000000) + " Septillion, "
+            septillion = num2text(
+                (dat % 1000000000000000000000000000) /
+                1000000000000000000000000) + " Septillion" + delimiter
         dat = dat - (dat % 1000000000000000000000000000)
 
     if (dat > 999999999999999999999999999):
         if (((dat % 1000000000000000000000000000000) /
              1000000000000000000000000000) != 0):
-            octillion = num2text((dat % 1000000000000000000000000000000) /
-                                 1000000000000000000000000000) + " Octillion, "
+            octillion = num2text(
+                (dat % 1000000000000000000000000000000) /
+                1000000000000000000000000000) + " Octillion" + delimiter
         dat = dat - (dat % 1000000000000000000000000000000)
 
     if (dat > 999999999999999999999999999999):
@@ -122,7 +126,7 @@ def num2text(dat):
              1000000000000000000000000000000) != 0):
             nonillion = num2text(
                 (dat % 1000000000000000000000000000000000) /
-                1000000000000000000000000000000) + " Nonillion, "
+                1000000000000000000000000000000) + " Nonillion" + delimiter
         dat = dat - (dat % 1000000000000000000000000000000000)
 
     if (dat > 999999999999999999999999999999999):
@@ -130,7 +134,7 @@ def num2text(dat):
              1000000000000000000000000000000000) != 0):
             decillion = num2text(
                 (dat % 1000000000000000000000000000000000000) /
-                1000000000000000000000000000000000) + " Decillion, "
+                1000000000000000000000000000000000) + " Decillion" + delimiter
         dat = dat - (dat % 1000000000000000000000000000000000000)
 
     if (dat > 999999999999999999999999999999999999):
@@ -138,7 +142,8 @@ def num2text(dat):
              1000000000000000000000000000000000000) != 0):
             undecillion = num2text(
                 (dat % 1000000000000000000000000000000000000000) /
-                1000000000000000000000000000000000000) + " Undecillion, "
+                1000000000000000000000000000000000000
+            ) + " Undecillion" + delimiter
         dat = dat - (dat % 1000000000000000000000000000000000000000)
 
     if (dat > 999999999999999999999999999999999999999):
@@ -146,7 +151,8 @@ def num2text(dat):
              1000000000000000000000000000000000000000) != 0):
             duodecillion = num2text(
                 (dat % 1000000000000000000000000000000000000000000) /
-                1000000000000000000000000000000000000000) + " Duodecillion, "
+                1000000000000000000000000000000000000000
+            ) + " Duodecillion" + delimiter
         dat = dat - (dat % 1000000000000000000000000000000000000000000)
 
     if (dat > 999999999999999999999999999999999999999999):
@@ -155,7 +161,7 @@ def num2text(dat):
             tredecillion = num2text(
                 (dat % 1000000000000000000000000000000000000000000000) /
                 1000000000000000000000000000000000000000000
-            ) + " Tredecillion, "
+            ) + " Tredecillion" + delimiter
         dat = dat - (dat % 1000000000000000000000000000000000000000000000)
 
     if (dat > 999999999999999999999999999999999999999999999):
@@ -164,7 +170,7 @@ def num2text(dat):
             quattuordecillion = num2text(
                 (dat % 1000000000000000000000000000000000000000000000) /
                 1000000000000000000000000000000000000000000
-            ) + " Quattuordecillion, "
+            ) + " Quattuordecillion" + delimiter
     dat = dat - (dat % 1000000000000000000000000000000000000000000000)
 
     if (dat > 999999999999999999999999999999999999999999999999):
@@ -173,7 +179,7 @@ def num2text(dat):
             quindecillion = num2text(
                 (dat % 1000000000000000000000000000000000000000000000000) /
                 1000000000000000000000000000000000000000000000
-            ) + " Quindecillion, "
+            ) + " Quindecillion" + delimiter
         dat = dat - (dat % 1000000000000000000000000000000000000000000000000)
 
     if (dat > 999999999999999999999999999999999999999999999999999):
@@ -182,7 +188,7 @@ def num2text(dat):
             sexdecillion = num2text(
                 (dat % 1000000000000000000000000000000000000000000000000000) /
                 1000000000000000000000000000000000000000000000000
-            ) + " Sexdecillion, "
+            ) + " Sexdecillion" + delimiter
         dat = dat - (dat %
                      1000000000000000000000000000000000000000000000000000)
 
@@ -192,7 +198,7 @@ def num2text(dat):
             septemdecillion = num2text(
                 (dat % 1000000000000000000000000000000000000000000000000000000)
                 / 1000000000000000000000000000000000000000000000000000
-            ) + " Septemdecillion, "
+            ) + " Septemdecillion" + delimiter
         dat = dat - (dat %
                      1000000000000000000000000000000000000000000000000000000)
 
@@ -203,7 +209,7 @@ def num2text(dat):
                 (dat %
                  1000000000000000000000000000000000000000000000000000000000) /
                 1000000000000000000000000000000000000000000000000000000
-            ) + " Octodecillion, "
+            ) + " Octodecillion" + delimiter
         dat = dat - (
             dat % 1000000000000000000000000000000000000000000000000000000000)
 
@@ -215,7 +221,7 @@ def num2text(dat):
                 (dat %
                  1000000000000000000000000000000000000000000000000000000000000)
                 / 1000000000000000000000000000000000000000000000000000000000
-            ) + " Novemdecillion, "
+            ) + " Novemdecillion" + delimiter
         dat = dat - \
             (dat % 1000000000000000000000000000000000000000000000000000000000000)
 
@@ -228,7 +234,7 @@ def num2text(dat):
                 dat %
                 1000000000000000000000000000000000000000000000000000000000000000
             ) / 1000000000000000000000000000000000000000000000000000000000000
-                                    ) + " Vigintillion, "
+                                    ) + " Vigintillion" + delimiter
         dat = dat - \
             (dat % 1000000000000000000000000000000000000000000000000000000000000000)
     # returns the name to either the function itself or the user
@@ -285,7 +291,7 @@ def tounits(dat):
         pof = "Eight"
     elif (unit == 9.0 or unit == 9):
         pof = "Nine"
-    elif (unit == 0.0 or unit == 0):  # Zero added on 28 jan 2018 12:51
+    elif (dat == 0.0 or dat == 0):
         pof = "Zero"
     return (pof)
 
@@ -316,8 +322,15 @@ def totens(dat):
 
 
 if __name__ == "__main__":
-    inp = input("Enter Number : ")
-    X = int(inp, 10)
+    import argparse
+    parser = argparse.ArgumentParser()
 
-    print("\n" + "\n The Number " + inp + " is called " + num2text(X) + "\n")
-    input("PRESS ENTER TO EXIT")
+    parser.add_argument("-d", "--delimiter", help="choose the delimiter")
+    parser.add_argument("Number", type=int)
+    args = parser.parse_args()
+
+    if args.Number:
+        if args.delimiter:
+            print(num2text(args.Number, delimiter=args.delimiter))
+        else:
+            print(num2text(args.Number))
