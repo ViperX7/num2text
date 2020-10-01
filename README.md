@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Python3+
 
-### Installing
+### Installing {To do}
 Just Copy and paste the following in your terminal
 
 ```
