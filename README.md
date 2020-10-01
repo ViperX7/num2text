@@ -1,5 +1,21 @@
 # Num2text
-A simple python module to convert numbers to textual words eg. 2 -> two
+A simple python module to convert numbers to textual words 
+For Example :- 
+Input :- 5678834
+
+Output:- 'Five Million, Six Hundred Seventy Eight Thousand, Eight Hundred Thirty Four'
+
+Input :- 5678834
+
+Output:- 'Five Million, Six Hundred Seventy Eight Thousand, Eight Hundred Thirty Four'
+
+Input :- 2
+
+Output:- 'Two'
+
+Input :- 1232467234641294
+
+Output:- 'One Quadrillion, Two Hundred Thirty Two Trillion, Four Hundred Sixty Seven Billion, Two Hundred Thirty Four Million, Six Hundred Fourty One Thousand, Two Hundred Ninety Four'
 
 ## Getting Started
 
@@ -8,6 +24,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Python3+
+
 
 ### Installing {To do}
 Just Copy and paste the following in your terminal
