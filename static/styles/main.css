@@ -1,20 +1,106 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
-
-body{
-    overflow; scroll-behavior: auto;
-    padding: 3%;
-    background: #132743;
-    color: whitesmoke;
-    font-family: 'Roboto Mono', monospace;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+html {
+  font-size: 14px;
 }
-.header_font{
-    font-family: 'Roboto Mono', monospace;
+body {
+  background-color: #393e46;
+  height: 100vh;
+  text-align: center;
 }
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+.container {
+  width: 70%;
+  margin: auto;
+}
+ul {
+  list-style-type: none;
+  color: #fff;
+}
+h1 {
+  margin: 30px;
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+.result {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.field {
+  padding: 13px;
+  width: 80%;
+}
+.field:focus {
+  outline: none;
+}
+footer {
+  margin-top: 5%;
+  color: #eeeeee;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+}
+.button {
+  padding: 1rem;
+  margin-right: 1rem;
+  background: #1a1a1a;
+  border: none;
+  color: #e94560;
+  transition: 1s;
+}
+.button:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+}
+.button:focus {
+  outline: none;
+}
+.social-links {
+  margin: 20px 0 0 0;
+}
+.social-links a {
+  padding: 0 2px;
+}
+.social-links a i {
+  height: 40px;
+  width: 40px;
+  color: #e94560;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: 1s;
+}
+.social-links a i:hover {
+  background: #fff;
+  color: #1a1a1a;
+}
+.bottom center {
+  margin-top: 1rem;
+  padding: 5px;
+  font-size: 1rem;
+}
+.bottom center span {
+  color: #fff;
+}
+.bottom center a {
+  color: #e94560;
+  text-decoration: none;
+}
+.bottom center a:hover {
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
 }
