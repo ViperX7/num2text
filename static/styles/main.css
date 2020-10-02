@@ -1,0 +1,20 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+body{
+    overflow; scroll-behavior: auto;
+    padding: 3%;
+    background: #132743;
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+}
+.header_font{
+    font-family: 'Roboto Mono', monospace;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
