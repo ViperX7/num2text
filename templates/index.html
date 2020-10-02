@@ -1,28 +1,65 @@
-
-
-
-
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>num2text</title>     
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="{{ url_for('static',filename='styles/main.css') }}">
-    </head>
-    <body>
-        <div class="container-fluid main_div">
-        <div class="container-fluid header_font">
-            <h1 class="text-center header_font">Number to text converter</h1>
-        </div>
-        <div class="container-fluid">
-            <form action="/" method="post">
-                <input class="form-control" type="number" name="number" placeholder="enter any number" required>
-                <input class="btn btn-primary center" type="submit" value="convert">
-            </form>
-        </div>
-        <div class="result container-fluid text-center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>num2text</title>
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static',filename='images/favicon.png') }}"
+      type="image/x-icon"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/main.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container-fluid main_div">
+      <div class="container-fluid header_font">
+            <h1 class="heading">num2text</h1>
+            <p>
+                Ever wondered what comes after trillion? Want to convert numbers to words? Use this simple website to acheive the same.
+            </p>
+            <div class="desc">
+                <p>
+                    <b>Step 1 &nbsp;:- </b> &nbsp;Enter the number. 
+                <br>
+                 <b>Step 2 &nbsp;:- </b> &nbsp;Hit on convert button to see the result.
+                </p>
+            </div>
+                
+                
+                </ul>
+            </p>
+      </div>
+      <div class="container-fluid">
+        <form action="/" method="post">
+          <input
+            class="form-control field"
+            type="number"
+            name="number"
+            placeholder="enter any number"
+            required
+          />
+          <br> <br>
+          <input class="button" type="submit" value="convert" />
+        </form>
+      </div>
+  <div class="result container-fluid text-center">
             {% if number %}
             <p class="h3 links">Number</p>
             <h5> {{number}}</h5>
@@ -33,12 +70,55 @@
             <h5> {{text}}</h5>
             {% endif %}
         </div>
-        </div>
-        <div class="footer text-center">
-        Made with <span style="color: #e25555;">&hearts;</span> by <a href="https://github.com/ViperX7">ViperX7</a>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
-    </html>
+    </div>
+    <!-- <div class="footer text-center">
+      Made with <span style="color: #e25555">&hearts;</span> by
+      <a href="https://github.com/ViperX7">ViperX7</a>
+    </div> -->
+    <footer class="footer text-center">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/viperx7/" class="profile-icon"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a href="https://www.github.com/ViperX7" class="profile-icon"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a href="https://www.facebook.com/utkarsh.yadav.0702" class="profile-icon"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/viperx7_/" class="profile-icon"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <!-- <a href="https://www.twitter.com/codersaty" class="profile-icon"
+          ><i class="fa fa-twitter"></i
+        ></a> -->
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit"
+            >Made with &hearts; by
+            <a href="#">ViperX7</a></span
+          >
+          <!-- Add your Ctf d profile here or your portfolio -->
+          | <span class="fa fa-copyright"></span
+          ><span> 2020 All right Reserved.</span>
+        </center>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
