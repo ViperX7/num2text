@@ -22,8 +22,8 @@ def num2text(dat, delimiter=", "):
     # input inspection
 
     if (dat > pow(10, 64) - 1):
-        print("Input Out of range")
-        exit()
+        return "Input Out of range"
+        
     elif (dat < 0):
         print("Invalid Input \n converting to positive number")
         dat = dat * (-1)

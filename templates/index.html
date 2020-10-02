@@ -22,7 +22,12 @@
                 <input class="btn btn-primary center" type="submit" value="convert">
             </form>
         </div>
-        <div class="result container-fluid">
+        <div class="result container-fluid text-center">
+            {% if number %}
+            <p class="h3 links">Number</p>
+            <h5> {{number}}</h5>
+            {% endif %}
+            
             {% if text %}
             <p class="h3 links">Text</p>
             <h5> {{text}}</h5>

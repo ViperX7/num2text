@@ -15,6 +15,7 @@ def home():
    
     if request.method == 'POST':
         num = request.form.get('number')
+        num1=num
         num=int(num)
 
         print(num)
@@ -22,9 +23,9 @@ def home():
         print(text)
 
        
-        return render_template('index.html', text=text)
+        return render_template('index.html',number=num1, text=text)
     text=''
-    return render_template('index.html', text='')
+    return render_template('index.html',num='', text='')
 @app.context_processor
 def override_url_for():
     return dict(url_for=dated_url_for)
