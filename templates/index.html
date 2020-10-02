@@ -59,12 +59,17 @@
           <input class="button" type="submit" value="convert" />
         </form>
       </div>
-      <div class="result container-fluid">
-        {% if text %}
-        <p class="h3 links">Result</p>
-        <p>{{text}}</p>
-        {% endif %}
-      </div>
+  <div class="result container-fluid text-center">
+            {% if number %}
+            <p class="h3 links">Number</p>
+            <h5> {{number}}</h5>
+            {% endif %}
+            
+            {% if text %}
+            <p class="h3 links">Text</p>
+            <h5> {{text}}</h5>
+            {% endif %}
+        </div>
     </div>
     <!-- <div class="footer text-center">
       Made with <span style="color: #e25555">&hearts;</span> by
