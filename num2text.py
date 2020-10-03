@@ -322,7 +322,7 @@ def totens(dat):
     elif (unit == 40):
         pof = "Fourty "
     elif (unit == 50):
-        pof = "Fivety "
+        pof = "Fifty "
     elif (unit == 60):
         pof = "Sixty "
     elif (unit == 70):
